@@ -1,0 +1,46 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+<h1>   مواعيد الدروس</h1>
+<br>
+    
+    
+    <table class="container">
+        <thead>
+            <tr>
+                <th><h1>اسم المدرس </h1></th>
+                <th><h1>اسم المادة</h1></th>
+                <th><h1>الايام </h1></th>
+                <th><h1>الساعة</h1></th>
+                <th><h1>السعر</h1></th>
+                <th><h1>تفاصيل</h1></th>
+                <th><h1>المرحلة</h1></th>
+                <th><h1>الصف</h1></th>
+
+
+
+
+            </tr>
+        </thead>
+        <tbody>
+            {% for coure in Coures %}
+            <tr>
+                <td>{{ coure.instructor }}</td>
+                <td>{{ coure.coures_name }}</td>
+                <td>
+                {% for day in coure.days  %}
+                {{ day }} 
+                {% endfor %}</td>
+                <td>{{ coure.hour }}</td>
+                <td>{{ coure.price }}</td>
+                <td>{{ coure.details }}</td>
+                <td>{{ coure.class_type }}</td>
+                <td>{{ coure.class_number }}</td>
+
+
+                
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

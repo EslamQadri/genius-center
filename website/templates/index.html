@@ -1,0 +1,554 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <link rel="icon" href="{% static 'images/genius-icon.png'%}" type="image/gif" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Genius for training</title>
+
+  <link  type="text/css" href="{% static 'css/table.css'%}" rel="stylesheet" />
+
+  <!-- bootstrap core css -->
+  <link  type="text/css" href="{% static 'css/bootstrap.css'%}" rel="stylesheet" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- font awesome style -->
+  <link href="{% static 'css/font-awesome.min.css'%}" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/style.css'%}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{% static 'css/responsive.css'%}" rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="{% url 'home'%}"> <!-- todo : link home -->
+            <span>Genius</span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  ml-auto">
+              <li class="nav-item active"> <!-- todo : link  home -->
+                <a class="nav-link" href="{% url 'home'%}">Home <span class="sr-only">(current)</span></a>
+              </li>
+             
+            </ul>
+            
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    {% block content %}
+    <section class="slider_section ">
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="detail-box">
+                    <h1>
+                      Genius  <br>
+                      For Training
+                    </h1>
+                    <p>
+                      مهمتنا هي تقديم تجارب تعليمية استثنائية تمنح المتعلمين المعرفة والمهارات التي تمكنهم من التفوق في مجتمع متجدد باستمرار. نحن نؤمن بأن التعلم يجب أن يكون ممتعًا وملهمًا، ونسعى جاهدين لخلق بيئة تعليمية تشجع على الفضول والاستقلالية</p>
+                    <div class="btn-box">
+                      <a href="{% url 'training' %}" class="btn-1">
+                       التدريبات
+                      </a>
+                      <a href="{% url 'coures'%}" class="btn-2">
+                       الكورسات والدروس
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class=" col-lg-10 mx-auto">
+                      <div class="img-box">
+                        <img src="{% static 'images/logo5.png'%}" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="detail-box">
+                    <h1>
+                      Genius  <br>
+                      For Training
+                    </h1>
+                    <p>
+                      مركز تقديم الخدمات التدريبيه والتعليمية تابع لجمعيه البر الاسلامية المشهره برقم 386 لسنة 1989</p>
+                    <div class="btn-box">
+                      <a href="" class="btn-1">
+                   التدريبات
+                      </a>
+                      <a href="" class="btn-2">
+                        الكورسات والدروس
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class=" col-lg-10 mx-auto">
+                      <div class="img-box">
+                        <img src="{% static 'images/logo3.png'%}" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--
+          <div class="carousel-item">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="detail-box">
+                    <h1>
+                      Fast & Secure <br>
+                      Web Hosting
+                    </h1>
+                    <p>
+                      Anything embarrassing hidden in the middle of text. All the Lorem Ipsuanything embarrassing hidden in the middle of text. All the Lorem Ipsumm </p>
+                    <div class="btn-box">
+                      <a href="" class="btn-1">
+                        Read More
+                      </a>
+                      <a href="" class="btn-2">
+                        Contact Us
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class=" col-lg-10 mx-auto">
+                      <div class="img-box">
+                        <img src="{% static 'images/slider-img.png'%}" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        -->
+        </div>
+        <div class="carousel_btn-box">
+          <a class="carousel-control-prev" href="#customCarousel1" role="button" data-slide="prev">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#customCarousel1" role="button" data-slide="next">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- end slider section -->
+  </div>
+ 
+
+  <!-- service section -->
+
+  <section class="service_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+         اهدافنا
+        </h2>
+      </div>
+    </div>
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <div class="box ">
+            <div class="img-box">
+              <img src="{% static 'images/s1.png'%}" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>
+                الابتكار
+              </h4>
+              <p>
+                نسعى لاستخدام أحدث الأساليب التعليمية وتقنيات التعلم الحديثة لتحقيق تجربة تعليمية ملهمة وفعّالة
+              </p>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="box ">
+            <div class="img-box">
+              <img src="{% static 'images/s2.png'%}" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>
+                التميز
+              </h4>
+              <p>
+                نسعى دائمًا لتحقيق أعلى مستويات الجودة والتميز في تقديم محتوى تعليمي متميز وفعّال
+              </p>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 ">
+          <div class="box ">
+            <div class="img-box">
+              <img src="{% static 'images/s3.png'%}" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>
+                التأثير الإيجابي
+              </h4>
+              <p>
+                نؤمن بأهمية تأثير التعليم في تغيير الحياة، ونطمح لأن يكون لدينا دور فعّال في تحقيق تحولات إيجابية في المجتمع
+              </p>
+              
+            </div>
+          </div>
+        </div>
+       
+       
+      </div>
+    </div>
+  </section>
+
+  <!-- end service section -->
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding-bottom">
+    <div class="container  ">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                من نحن 
+              </h2>
+            </div>
+            <p>
+            في جينيس ، نفخر بتقديم تجارب تعليمية استثنائية تهدف إلى تحسين حياة الأفراد وتطوير مهاراتهم بشكل شامل. نحن نعتز بمكانتنا كوجهة تعليمية مميزة تجمع بين الجودة والاحترافية
+            
+            و هدفنا هو تمكين الأفراد من تحقيق أهدافهم الشخصية والمهنية من خلال توفير دورات معتمدة تلبي احتياجات سوق العمل الحديث. نحن نسعى جاهدين لأن نصبح الخيار الأول للأفراد الذين يسعون للنمو والتطور
+            </p>
+            
+          </div>
+        </div>
+        <div class="col-md-6 ">
+          <div class="img-box">
+            <img src="{% static 'images/about-img.png'%}" alt="">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+{% endblock %}
+  <!-- end about section -->
+
+
+  <!-- server section -->
+
+  <!-- end server section -->
+
+  <!-- price section -->
+
+
+  <!-- price section -->
+  <!-- client section -->
+
+  <!-- 
+  <section class="client_section ">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Team member
+                 </h2>
+        
+      </div>
+    </div>
+    <div class="container px-0">
+      <div id="customCarousel2" class="carousel  slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10 mx-auto">
+                  <div class="box">
+                    <div class="img-box">
+                      <img src="{% static 'images/ra2d.jpg'%}" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <div class="client_info">
+                        <div class="client_name">
+                          <h5>
+                            رائد صلاح 
+                          </h5>
+                          <h6>
+                            مؤسس ومدرب معتمد
+                          </h6>
+                        </div>
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                      </div>
+                      <p>
+                        
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10 mx-auto">
+                  <div class="box">
+                    <div class="img-box">
+                      <img src="{% static 'images/client.jpg'%}" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <div class="client_info">
+                        <div class="client_name">
+                          <h5>
+                            Morojink
+                          </h5>
+                          <h6>
+                            Customer
+                          </h6>
+                        </div>
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                      </div>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum
+                        dolore eu fugia
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10 mx-auto">
+                  <div class="box">
+                    <div class="img-box">
+                      <img src="{% static 'images/client.jpg'%}" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <div class="client_info">
+                        <div class="client_name">
+                          <h5>
+                            Morojink
+                          </h5>
+                          <h6>
+                            Customer
+                          </h6>
+                        </div>
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                      </div>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum
+                        dolore eu fugia
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel_btn-box">
+          <a class="carousel-control-prev" href="#customCarousel2" role="button" data-slide="prev">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#customCarousel2" role="button" data-slide="next">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+-->
+  <!-- end client section -->
+
+  <!-- contact section -->
+  <!--
+  <section class="contact_section layout_padding-bottom">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Get In Touch
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-md-8 col-lg-6 mx-auto">
+          <div class="form_container">
+            <form action="">
+              <div>
+                <input type="text" placeholder="Your Name" />
+              </div>
+              <div>
+                <input type="email" placeholder="Your Email" />
+              </div>
+              <div>
+                <input type="text" placeholder="Your Phone" />
+              </div>
+              <div>
+                <input type="text" class="message-box" placeholder="Message" />
+              </div>
+              <div class="btn_box ">
+                <button>
+                  SEND
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+-->
+  <!-- end contact section -->
+
+  <!-- info section -->
+
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="info_contact">
+            <h4>
+              Address
+            </h4>
+            <div class="contact_link_box">
+              <a href=""> <!-- لما رائد يعمل map-->
+               
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  ش المحكمة امام صيدناوي اعلي جيلاتي نصار ‏جرجا‏، ‏محافظة سوهاج‏، ‏مصر‏ 82951
+                </span>
+              </a>
+              <br>
+              <div >
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  Call 01090180051
+                </span>
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+        <div class="col-md-3">
+          <div class="info_link_box">
+            <h4>
+              Links
+            </h4>
+            <div class="info_links">
+              <a class="active" href="">
+                <img src="{% static 'images/nav-bullet.png'%}" alt="">
+                website
+              </a>
+              <a class="" href="https://www.facebook.com/Geniusgerga">
+                <img src="{% static 'images/nav-bullet.png'%}" alt="">
+                facebook
+              </a>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_detail">
+            <h4>
+              Info
+            </h4>
+            <p>
+              في جينيس، نفخر بأننا نعمل مع أفضل المدربين والمدرسين في مختلف المجالات. يتميز فريقنا بالخبرة والاهتمام بتقديم تعليم ذو جودة عالية. نحن نعتبر التدريب والتعليم وسيلة لتحقيق النجاح، وهذا هو السبب في أننا نجمع بين الخبرة والشغف لتقديم أفضل الدروس والكورسات.
+            </p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By
+        <a href="https://www.facebook.com/eslamkadry07/">Eng/Eslam Qadri</a>
+      </p>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script src="{% static 'js/jquery-3.4.1.min.js'%}"></script>
+  <!-- bootstrap js -->
+  <script src="{% static 'js/bootstrap.js'%}"></script>
+  <!-- custom js -->
+  <script src="{% static 'js/custom.js'%}"></script>
+
+
+</body>
+
+</html>
